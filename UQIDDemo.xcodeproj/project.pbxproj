@@ -13,6 +13,8 @@
 		9E1CC0231ED7BE9C0098BAB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1CC0211ED7BE9C0098BAB7 /* Main.storyboard */; };
 		9E1CC0251ED7BE9C0098BAB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1CC0241ED7BE9C0098BAB7 /* Assets.xcassets */; };
 		9E1CC0281ED7BE9C0098BAB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1CC0261ED7BE9C0098BAB7 /* LaunchScreen.storyboard */; };
+		9E1CC0321ED7BF100098BAB7 /* YDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1CC0311ED7BF100098BAB7 /* YDDevice.m */; };
+		9E1CC0351ED7BF9C0098BAB7 /* YDKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1CC0341ED7BF9C0098BAB7 /* YDKeyChain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		9E1CC0241ED7BE9C0098BAB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E1CC0271ED7BE9C0098BAB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E1CC0291ED7BE9C0098BAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E1CC0301ED7BF100098BAB7 /* YDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDDevice.h; sourceTree = "<group>"; };
+		9E1CC0311ED7BF100098BAB7 /* YDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDDevice.m; sourceTree = "<group>"; };
+		9E1CC0331ED7BF9C0098BAB7 /* YDKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDKeyChain.h; sourceTree = "<group>"; };
+		9E1CC0341ED7BF9C0098BAB7 /* YDKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDKeyChain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		9E1CC0171ED7BE9C0098BAB7 /* UQIDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9E1CC02F1ED7BEA80098BAB7 /* UQID */,
 				9E1CC01B1ED7BE9C0098BAB7 /* AppDelegate.h */,
 				9E1CC01C1ED7BE9C0098BAB7 /* AppDelegate.m */,
 				9E1CC01E1ED7BE9C0098BAB7 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				9E1CC0191ED7BE9C0098BAB7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E1CC02F1ED7BEA80098BAB7 /* UQID */ = {
+			isa = PBXGroup;
+			children = (
+				9E1CC0301ED7BF100098BAB7 /* YDDevice.h */,
+				9E1CC0311ED7BF100098BAB7 /* YDDevice.m */,
+				9E1CC0331ED7BF9C0098BAB7 /* YDKeyChain.h */,
+				9E1CC0341ED7BF9C0098BAB7 /* YDKeyChain.m */,
+			);
+			path = UQID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +128,7 @@
 				TargetAttributes = {
 					9E1CC0141ED7BE9C0098BAB7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 93A3JEXPG7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,7 +171,9 @@
 			files = (
 				9E1CC0201ED7BE9C0098BAB7 /* ViewController.m in Sources */,
 				9E1CC01D1ED7BE9C0098BAB7 /* AppDelegate.m in Sources */,
+				9E1CC0321ED7BF100098BAB7 /* YDDevice.m in Sources */,
 				9E1CC01A1ED7BE9C0098BAB7 /* main.m in Sources */,
+				9E1CC0351ED7BF9C0098BAB7 /* YDKeyChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +293,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 93A3JEXPG7;
 				INFOPLIST_FILE = UQIDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mopote.UQIDDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,10 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 93A3JEXPG7;
 				INFOPLIST_FILE = UQIDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mopote.UQIDDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
