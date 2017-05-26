@@ -1,3 +1,2 @@
 # UQIDDemo
-UQID
-获取设备唯一标识UQID
+获取设备的唯一标识UQID
