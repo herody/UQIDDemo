@@ -3,7 +3,7 @@
 //  KeyChainTest
 //
 //  Created by HouYadi on 16/3/21.
-//  Copyright © 2016年 魔品杭州魔品科技有限公司. All rights reserved.
+//  Copyright © 2016年 侯亚迪 All rights reserved.
 //
 
 #import "YDKeyChain.h"
